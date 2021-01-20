@@ -1,0 +1,368 @@
+$color-darkGrey:#868281;
+$color-lightGrey:#B0B0B0;
+$color-orange: #F25238;
+$color-white: #FFFF;
+$color-black: #000000;
+
+.ghe{
+    margin: 5px;
+    background: url("/img/ghechuachon.png") no-repeat;
+    width: 26px;
+    height: 24px;
+    border: 0px;
+    margin-bottom: 20px;
+    margin-right: 16px;
+}
+.gheVip{
+    background: url("/img/ghevip.png") no-repeat;
+}
+.gheDaDat{
+    cursor: no-drop;
+    background: url("/img/ghedadat.png") no-repeat;
+}
+.gheDangDat{
+    background: url("/img/ghedangchon.png") no-repeat;
+}
+
+.react-datepicker__input-container{
+    margin-top: 0.7rem;
+    > input{
+        border: none;
+        border-bottom: 1px solid black;
+        height: 3rem;
+        width: 11rem;
+    }
+}
+
+.react-datepicker-popper{
+    top: 9px !important;
+    left: -65px !important;
+}
+
+.react-datepicker__triangle{
+    left: 80px !important;
+}
+
+.button-tmp {
+    border-radius: 25px;
+    border: 1px solid $color-orange;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.button-payments {
+    height: 28px;
+    border-radius: 25px;
+    border: 1px solid $color-darkGrey;
+    width: 28px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.visa-infoText {
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid $color-black;
+    margin: 13px;
+    margin-left: 15px;
+}
+
+.email_phoneNumber-text {
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid $color-darkGrey;
+    width: 410px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.Screen{
+    &__header{
+        background-color: black;
+        width: 900px;
+        margin-top: 46px;
+        margin-left: 60px;
+        height: 25px;
+    }
+    &__text{
+        background-color: #C6C1C1;
+        font-size: 25px;
+        text-align: center;
+        width: 900px;
+        height: 100px;
+        margin-left: 60px;
+        font-weight: bold;
+        color: #544645;
+        padding-top: 25px;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+.ListChair{
+    display: flex;
+    margin-left: 32px;
+    margin-top: 50px;
+    > div > div{
+        font-size: 25px;
+        color: #868281;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    &__chair{
+        margin-left: 55px;
+    }
+}
+.ChairInfo-Left{
+    display: flex;
+    > div{
+        margin: 19px;
+        margin-left: 105px;
+        text-align: center;
+        > div{
+            font-size: 21px;
+            font-weight: 500;
+            color:#868281;
+        }
+    }
+}
+
+.Age{
+    font-size: 27px;
+    background-color: $color-orange;
+    height: 35px;
+    width: 63px;
+    color: $color-white;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 51px;
+}
+.MovieName{
+    color: $color-black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 44px;
+}
+.Exit{
+    width: 75px;
+    height: 75px;
+}
+.ChairInfo-Right{
+    display: flex;
+    font-size: 20px;
+    color: #FAA61A;
+    overflow: unset;
+    > div {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
+.Money{
+    font-size: 20px;
+    color: $color-orange;
+}
+.Email{
+    color: $color-darkGrey;
+    font-size: 25px;
+    font-weight: 500;
+}
+.Email-text{
+    @extend .email_phoneNumber-text;
+}
+.PhoneNumber{
+    color: $color-darkGrey;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.PhoneNumber-text{
+    @extend .email_phoneNumber-text;
+}
+.Payments{
+    color: $color-darkGrey;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.Momo{
+    display: flex;
+    margin-top: 18px;
+    &__button {
+        @extend .button-payments;
+    }
+    > img{
+        width: 50px;
+        height: 50px;
+        margin-left: 13px;
+    }
+    &__name{
+        color: $color-darkGrey;
+        margin-top: 11px;
+        margin-left: 12px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    &__textArea{
+        border: none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid $color-black;
+        margin: 11px;
+        margin-left: 30px;
+    }
+}
+.Momo-Btn{
+    @extend .button-tmp;
+    background-color: $color-white;
+    &:hover {
+        background-color: $color-orange;
+        border: 0px;
+    }
+    &__active {
+    @extend .button-tmp;
+        background-color: $color-orange;
+    }
+}
+.Paypal{
+    display: flex;
+    margin-top: 18px;
+    &__button {
+        @extend .button-payments;
+    }
+    > img{
+        width: 50px;
+        height: 50px;
+        margin-left: 13px;
+        border: 1px solid $color-darkGrey;
+        border-radius: 12px;
+        box-shadow: 1px 1px 1px $color-darkGrey;
+    }
+    &__name{
+        color: $color-darkGrey;
+        margin-top: 11px;
+        margin-left: 12px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    &__textArea{
+        border: none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid $color-black;
+        margin: 11px;
+        margin-left: 50px;
+    }
+}
+.Paypal-Btn{
+    @extend .button-tmp;
+    background-color: $color-white;
+    &:hover{
+        background-color: $color-orange;
+        border: 0px;
+    }
+    &__active{
+        @extend .button-tmp;
+        background-color: $color-orange;
+    }
+}
+.Visa{
+    display: flex;
+    margin-top: 20px;
+    &__button {
+        @extend .button-payments;
+    }
+    > img{
+        width: 65px;
+        height: 35px;
+        border: 1px solid $color-darkGrey;
+        margin-left: 13px;
+        margin-top: 8px;
+        border-radius: 7px;
+        box-shadow: 1px 1px 1px $color-lightGrey;
+    }
+    &__infoText{
+        display: flex;
+    }
+    &__CVV{
+        border: none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid $color-black;
+        margin: 13px;
+        margin-left: 15px;
+    }
+}
+.Visa-btn {
+    @extend .button-tmp;
+    background-color: $color-white;
+    &:hover{
+        background-color: $color-orange;
+        border: 0px;
+    }
+    &__active{
+        @extend .button-tmp;
+        background-color: $color-orange;
+    }
+}
+.Sothe{
+    @extend .visa-infoText;
+}
+.ExpiredDate{
+    display: flex;
+    > img{
+        width: 20px;
+        height: 23px;
+        margin-top: 1.5rem;
+        margin-right: 0.8rem;
+        margin-left: 2.5rem;
+    }
+}
+.btnDatVe {
+    background-color: $color-orange;
+    margin-top: 72px;
+    width: 537px;
+    height: 60px;
+    margin-left: -55px;
+    font-size: 28px;
+    font-weight: bold;
+    color: $color-white;
+    border: none;
+    position: fixed;
+    &__active {
+        background-color: $color-orange;
+        margin-top: 14px;
+        width: 537px;
+        height: 60px;
+        margin-left: -55px;
+        font-size: 28px;
+        font-weight: bold;
+        color: $color-white;
+        border: none;
+    }
+}
+.CheckOut{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    &__left{
+        height: 754px;
+        border-right: 1px solid #868281;
+    }
+    &__right{
+        width: 88%;
+        margin-left: 55px;
+        &__header{
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
+        }
+        &__chair-money{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            margin-top: 20px;
+            height: 100px;
+        }
+    }
+}

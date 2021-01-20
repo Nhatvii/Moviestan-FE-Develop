@@ -1,0 +1,14 @@
+.Google-btn{
+    margin: 3rem;
+    margin-top: 3rem;
+    width: 34.6rem;
+    border: none;
+    cursor: pointer;
+    &__img{
+        width: 34.5rem;
+        height: 6.5rem;
+        -webkit-box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75);
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 14px;
+    }
+}

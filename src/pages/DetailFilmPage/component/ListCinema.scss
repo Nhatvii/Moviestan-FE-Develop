@@ -1,0 +1,181 @@
+$color-darkGrey:#868281;
+@mixin logo-img {
+    width: 60px;
+    height: 60px;
+    margin: 40px 40px;
+}
+#scroll-bar::-webkit-scrollbar{
+    height: 0.5rem;
+}
+
+#scroll-bar::-webkit-scrollbar-track {
+background: #f1f1f1; 
+border-radius: 10px;
+
+}
+
+#scroll-bar::-webkit-scrollbar-thumb {
+background: #888; 
+border-radius: 10px;
+
+}
+
+#scroll-bar::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+.ListCinema{
+    margin-top: 25px;
+    border: 2px solid rgba(134, 130, 133, 0.65);
+    border-radius: 10px;
+    display: flex;
+    width: 75%;
+    margin-left: 20rem;
+    &__logo{
+        width: 13%;
+        &__img{
+            @include logo-img();
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        &__img-active{
+            @include logo-img();
+            opacity: 1;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    &__timeSchedule{
+        width: 90%;
+        height: 100%;
+        overflow: hidden;
+        &__date{
+            height: 100%;
+            display: flex;
+            border-left: 1px solid $color-darkGrey;
+            margin-top: -1px;
+            &:hover{
+                overflow-x: scroll;
+            }
+            &__listDate{
+                display: flex;
+                &__cinemaDate{
+                    display: flex;
+                    &__ngayThangThu{
+                        display: flex;
+                        width: 5.375rem;
+                        margin: 4px;
+                        margin-left: 2.5rem;
+                        color: $color-darkGrey;
+                        &:hover{
+                            color: #F25238;
+                        }
+                        &__thangThu{
+                            text-align: center;
+                            &__thang{
+                                font-size: 14px;
+                            }
+                            &__thu{
+                                font-size: 14px;
+                            }
+                        }
+                        &__ngay{
+                            font-size: 20px;
+                            margin-top: 4px;
+                            margin-left: 9px;
+                        }
+                    }
+                }
+            }
+        }
+        &__info{
+            height: 80%;
+            overflow: auto;
+            &__detail{
+                width: 100%;
+                padding: 20px;
+                border: 1px solid $color-darkGrey;
+                &__info{
+                    display: flex;
+                    > img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    &__nameCinema-address{
+                        margin-left: 30px;
+                        margin-top: 8px;
+                        &__name-cinema{
+                            color: $color-darkGrey;
+                            font-size: 17px;
+                            font-weight: bold;
+                            &__active{
+                                color: #F25238;
+                            }
+                        }
+                        &__address{
+                            color: $color-darkGrey;
+                            font-size: 10px;
+                        }
+                    }
+                    &__format{
+                        font-weight: bold;
+                        font-size: 17px;
+                        margin-top: 21px;
+                    }
+                }
+                &__time{
+                    padding: 20px;
+                    margin-left: -28px;
+                    margin-top: 8px;
+                    > a{
+                        border: 1px solid $color-darkGrey;
+                        border-radius: 3px;
+                        padding: 10px 25px;
+                        margin: 10px 7px;
+                        color: $color-darkGrey;
+                        font-size: 20px;
+                        &:hover{
+                            color: #F25238;
+                            border: 1px solid #F25238;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    height: 13rem;
+    width: 100%;
+    position: absolute;
+    background-color: #1A0806;
+    margin-left: -24px;
+    &__about-us{
+      position: absolute; 
+      right: 10rem;
+      top: 5rem; 
+      color:#F25238;
+      font-size: 2.4rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+    &__copyright{
+      position: absolute; 
+      left: 0.8rem;
+      top: 5rem;
+      display: flex;
+      width: 20rem;
+      height: 5rem; 
+      justify-content: center;
+      align-items: center;
+  
+      &__info{
+        font-size: 2.4rem;
+        color: $color-darkGrey;
+        padding-left: 1rem;
+      }
+    }
+  }

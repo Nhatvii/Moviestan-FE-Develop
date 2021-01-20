@@ -1,0 +1,155 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+$color-orange:#F25238;
+$color-white:#FFFF;
+$color-grey:#B0B0B0;
+
+.Detail{
+    &__background{
+        z-index: 0;
+        background:rgba(0, 0, 0, .65);
+        background-blend-mode: darken;
+    }
+    &__description{
+        width: 90%;
+        height: 695px;
+        display: flex;
+        z-index: 7;
+        &__background{
+            position: absolute;
+            top: 13.6rem;
+            left: 12rem;
+            height: 40.1rem;
+            width: 27.5rem; 
+            opacity: 0;    
+            text-align: center;  
+            border-radius: 7px;
+            border: none; 
+            transition: all 0.5s;
+            &__img{
+                z-index: 11;
+                cursor: pointer;
+                margin-top: -1rem;
+                width: 11rem;
+            }    
+            &:hover{
+                opacity: 1;
+                background-color: rgba(#000, 0.6);   
+                transition: all 0.5s;  
+            }        
+        }
+        &__front{
+            width: 60rem;
+            &__img{
+                width: 68%;
+                height: 400px;
+                background-size: cover;
+                background-position: center;
+                margin-top: 137px;
+                margin-left: 120px;
+                margin-bottom: 110px;
+                border-radius: 7px;
+                z-index: 8;   
+            }
+        }
+
+        &__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 70px;
+            width: 70%;
+            margin-top: -160px;
+            z-index: 2;
+            &__launch-time{
+                font-size: 20px;
+                color: $color-grey;
+            }
+            &__time{
+                font-size: 20px;
+                color:$color-grey;
+            }
+            &__name-rate{
+                display: flex;
+                &__rate{
+                    background-color: $color-orange;
+                    width: 47px;
+                    border-radius: 5px;
+                    height: 30px;
+                    text-align: center;
+                    margin-top: 19px;
+                    &__rate-text{
+                        color: $color-white;
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+                }
+                &__movie-name{
+                    font-weight: bold;
+                    font-size: 45px;
+                    color: $color-white;
+                    margin-left: 20px;
+                }
+            }
+            &__btn-ticket{
+                width: 114px;
+                height: 47px;
+                font-size: 17px;
+                font-weight: bold;
+                border: 1px solid $color-orange;
+                border-radius: 5px ;
+                background-color:$color-orange;
+                color: $color-white;
+                margin-top: 15px;
+            }
+        }
+
+        &__rate{
+            width: 20%;
+            height: 50%;
+            display: flex;
+            padding-left: 276px;
+            z-index: 2;
+            > img{
+                width: 30px;
+                height: 30px;
+                margin-top: 175px;
+            }
+            > div{
+                font-size: 60px;
+                margin-top: 143px;
+                color: $color-orange;
+            }
+        }
+    }
+}
+
+.MuiTabs-flexContainer{
+    justify-content: center;
+    
+}
+.PrivateTabIndicator-colorSecondary-10{
+    background-color: $color-orange !important; 
+
+}
+.PrivateTabIndicator-colorSecondary-4 {
+    background-color: $color-orange !important; 
+}
+.MuiTab-textColorInherit.Mui-selected {
+    opacity: 1;
+    color: $color-orange;
+}
+.MuiTab-wrapper {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 61px;
+}
+
+.lichChieu{
+    border: 0px;
+}
+.MuiPaper-elevation4 {
+    box-shadow: none !important;
+}

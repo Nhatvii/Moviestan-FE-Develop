@@ -1,0 +1,112 @@
+@mixin title-left {
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+@mixin title-middle {
+    padding-bottom: 40px;
+    padding-left: 95px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #1A0806;
+    text-align: left;
+}
+.Info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 85%;
+    height: auto;
+    margin: 30px 107px;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 14px;
+    &__left{
+        &__table{
+            margin-top: 65px;
+            margin-left: 100px;
+
+            &__ngayChieu{
+                @include title-left();
+            }
+            &__thongTinNgayChieu{
+                @include title-middle();
+            }
+            &__daoDien{
+                @include title-left();
+            }
+            &__thongTinDaoDien{
+                @include title-middle();
+            }
+            &__dinhDang{
+                @include title-left();
+            }
+            &__thongTinDinhDang{
+                @include title-middle();
+            }
+            &__theLoai{
+                @include title-left();
+
+            }
+            &__thongTinTheLoai{
+                @include title-middle();
+            }
+            &__xuatXu{
+                @include title-left();
+
+            }
+            &__thongTinXuatXu{
+                @include title-middle();
+            }
+        }
+    }
+    &__right{
+        margin-top: 65px;
+        margin-right: 60px;
+        margin-left: 35px;
+        &__header{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        &__moTa{
+            font-size: 20px;
+            font-weight: lighter;
+            color: #1A0806;
+            text-align: left;
+            margin-top: 15px;
+        }
+    }
+}
+.footer{
+    height: 13rem;
+    width: 100%;
+    position: absolute;
+    background-color: #1A0806;
+    margin-left: -24px;
+    &__about-us{
+      position: absolute; 
+      right: 10rem;
+      top: 5rem; 
+      color:#F25238;
+      font-size: 2.4rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+    &__copyright{
+      position: absolute; 
+      left: 0.8rem;
+      top: 5rem;
+      display: flex;
+      width: 20rem;
+      height: 5rem; 
+      justify-content: center;
+      align-items: center;
+  
+      &__info{
+        font-size: 2.4rem;
+        color: #868281;
+        padding-left: 1rem;
+      }
+    }
+  }

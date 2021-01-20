@@ -1,0 +1,59 @@
+.login{
+    position: fixed;
+
+    width: 1544px;
+    height: 762px;
+    margin-top: -8px;
+    margin-left: -8px;
+
+    background-size: cover;
+    background-position: center;
+    &__gradient{
+        width: 1546px;
+        height: 762px;
+        background: rgb(242,82,56);
+        background: linear-gradient(90deg, rgba(242,82,56,0.846673703661152) 18%, rgba(250,128,114,0.7318277652858018) 50%);    
+        &__board{
+            position: absolute;
+            width: 400px;
+            height: 525px;
+            top: 13%;
+            left: 37%;
+            background-color: #FFFF;
+            border-radius: 10px;
+            &__logoutSign > img{
+                position: absolute;
+                border-radius: 15px;
+                width: 35px;
+                height: 35px;
+                border-radius: 15px;
+                left: 375px;
+                text-align: center;
+                top: -12px;
+            }
+            &__signin-Name{
+                font-size: 50px;
+                text-align: center;
+                margin-top: 105px;
+                color: #f25238;
+                font-weight: bold;
+            }
+            &__signin-facebook {
+                &__img{
+                width: 347px;
+                margin-top: 115px;
+                margin-left: 27px;
+                border-radius: 15px;
+                }
+            }
+            &__signin-google > img{
+                width: 347px;
+                margin-top: 35px;
+                margin-left: 27px;
+                border-radius: 15px;
+                border: 1px solid #E9E7E7;
+                box-shadow: 2px 2px 2px 2px #E9E7E7;
+            }
+        }
+    }
+}
