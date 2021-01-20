@@ -9,6 +9,7 @@ export default function GoogleLogin() {
   const dispatch = useDispatch();
 
   const responseGoogle = (response) => {
+    console.log(response)
     dispatch({ type: "GET_GOOGLEINFO", data: response });
     if (response.accessToken) {
       setLogin(true);
